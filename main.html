@@ -50,7 +50,7 @@
                     <img class="w-8 mx-auto" src="image/purse1.png" alt="">
                     <h3>Pay Bill</h3>
                 </div>
-                <div class="box border p-4 text-center rounded-sm">
+                <div id="transection-box" class="box border p-4 text-center rounded-sm">
                     <img class="w-8 mx-auto" src="image/transaction1.png" alt="">
                     <h3>Transactions</h3>
                 </div>
@@ -64,7 +64,7 @@
                         <div class="card w-full max-w-sm shrink-0 ">
                             <legend>Select Bank</legend>
                         <div class="card-body">
-                            <select class="select">
+                            <select id="selected-bank" class="select">
                                 <option disabled selected>Select Bank</option>
                                 <option value="bkash">Bkash</option>
                                 <option value="nogad">Nogad</option>
@@ -97,16 +97,28 @@
                             <input id="cashout-amount" id="Account-number" type="number" class="input" placeholder="Type Your Amount" required />
                             <label class="label">PIN</label>
                             <input  id="cashout-pin" value="1234" id="pin" type="text" class="input" placeholder="type Your PIN" required />
-                            <div><a class="link link-hover">Forgot password?</a></div>
+                            
                             <button id="cash-out-btn" class="btn btn-neutral bg-blue-700 mt-4">Add Money</button>
                         </fieldset>
 
         </section>
+
+          <!-- transection section -->
+           <section id="transection-history">
+            <h1 class="text-3xl font-bold text-red-400 text-center p-3 ">Trasection History</h1>
+            <div class="transection-container">
+
+            </div>
+            
+           </section>
     </header>
 
    </section>
-   <script src="script/addMoney.js"></script>
-   <script src="script/toggle.js"></script>
-   <script src="script/cashout.js"></script>
+   <script src="utilities/toogle.js"></script>
+   <script src="utilities/utilities.js"></script>
+  <script src="script/addmoney.js"></script>
+  <script src="script/cashout.js"></script>
+  <script src="script/transection.js"></script>
+
 </body>
 </html>
